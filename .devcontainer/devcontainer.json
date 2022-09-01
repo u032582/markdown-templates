@@ -1,0 +1,15 @@
+{
+	"name": "devcontainer",
+	"dockerComposeFile": ["docker-compose.yml"],
+	"service": "workspace",
+	"workspaceFolder": "/workspace",
+	"extensions": [
+		"yzhang.markdown-all-in-one",
+		"shd101wyy.markdown-preview-enhanced",
+		"mushan.vscode-paste-image",
+		"jebbs.plantuml",
+		"csholmq.excel-to-markdown-table",
+		"analytic-signal.preview-pdf",
+		"oderwat.indent-rainbow"
+	]
+}

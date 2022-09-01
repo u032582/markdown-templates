@@ -1,0 +1,38 @@
+@startuml シーケンス図
+
+autonumber
+
+actor "<<ブラウザ>>\n一般ユーザー" as USER
+
+
+box "docker on EC2" #OldLace
+    participant "<<springboot>>\nデモサーバー" as DEMO
+    database postgres as DB
+end box
+
+control RekognitionAPI as REK
+
+== 顔登録 ==
+USER -> DEMO :登録ページアクセス
+return
+note over USER: 顔撮影
+USER -> DEMO :<<XHR>>\n顔登録
+note right USER #HotPink
+    顔写真データ
+end note
+DEMO -> REK: indexFaces
+note right DEMO #HotPink
+    顔写真データ
+end note
+
+
+return: Face ID
+DEMO -> DB: 保存
+note right DEMO #HotPink
+    Face ID,
+    顔写真データ
+end note
+return
+USER <-- DEMO
+
+@enduml

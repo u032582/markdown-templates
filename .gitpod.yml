@@ -1,0 +1,15 @@
+#image:
+#  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - https://github.com/shd101wyy/vscode-markdown-preview-enhanced/releases/download/v0.5.3/markdown-preview-enhanced-0.5.3.vsix
+    - jebbs.plantuml
+tasks:
+  - name: docker-compose
+    init: >
+      cd $GITPOD_REPO_ROOT/.devcontainer && docker-compose pull
+    command: >
+      cd $GITPOD_REPO_ROOT/.devcontainer && docker-compose up -d
+  - name: hosts
+    command: >
+      sudo /bin/bash -c 'echo "127.0.0.1    plantuml" >> /etc/hosts'
