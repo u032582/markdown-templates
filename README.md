@@ -3,6 +3,7 @@ html:
   embed_local_images: true
   embed_svg: true
   offline: false
+  toc: true
 puppeteer:
   landscape: false
   format: "A4"
@@ -27,6 +28,8 @@ markmap:
   colorFreezeLevel: 2
   maxWidth: 300
 ---
+@import "style.less"
+
 # Markdown Exmples
 [TOC]
 
@@ -86,6 +89,7 @@ H~2~O
 
 ## link
 [Markdownリファレンス](https://shd101wyy.github.io/markdown-preview-enhanced/#/ja-jp/markdown-basics?id=criticmarkup)
+
 
 ## iframe ＋ mindmap
 <iframe src="mindmap.html?file=README.md" width="100%" height="600px" scrolling="no"/>
