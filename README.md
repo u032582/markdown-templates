@@ -22,7 +22,10 @@ toc:
   ordered: false
 export_on_save:
   html: true
-  puppeteer: true 
+  puppeteer: true
+markmap:
+  colorFreezeLevel: 2
+  maxWidth: 300
 ---
 # Markdown Exmples
 [TOC]
@@ -83,3 +86,6 @@ H~2~O
 
 ## link
 [Markdownリファレンス](https://shd101wyy.github.io/markdown-preview-enhanced/#/ja-jp/markdown-basics?id=criticmarkup)
+
+## iframe ＋ mindmap
+<iframe src="mindmap.html?file=README.md" width="100%" height="600px" scrolling="no"/>
