@@ -9,5 +9,6 @@
     "plantuml.exportSubFolder": false,
     "plantuml.commandArgs": [
     
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

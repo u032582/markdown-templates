@@ -29,8 +29,9 @@ jobs:
     - name: Sync to S3
       env:
         REPOSITORY_NAME: ${{ github.repository }}
-      run: | # htmlファイルのみをS3に同期
+      run: | # htmlファイルとmdファイルをS3に同期
         aws s3 sync ./ s3://recrue4-docs/cf/$REPO_NAME/ \
           --exclude "*" \
           --include "*.html" \
+          --include "*.md" \
           --delete

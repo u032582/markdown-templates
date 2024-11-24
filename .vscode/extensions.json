@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "gera2ld.markmap-vscode",
+        "shd101wyy.markdown-preview-enhanced",
+        "jebbs.plantuml"
     ]
 }
