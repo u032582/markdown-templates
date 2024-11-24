@@ -93,4 +93,5 @@ H~2~O
 
 
 ## iframe ＋ mindmap
+[リンク](mindmap.html?file=README.md)
 <iframe src="mindmap.html?file=README.md" width="100%" height="600px" scrolling="no"/>
