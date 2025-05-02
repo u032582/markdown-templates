@@ -1,9 +1,9 @@
 {
     "markdown.extension.preview.autoShowPreviewToSide": true,
     "markdown-preview-enhanced.enableExtendedTableSyntax": true,
-    "markdown-preview-enhanced.plantumlServer": "http://plantuml:8080/svg/",
+    "markdown-preview-enhanced.plantumlServer": "http://kroki:8000/plantuml/svg/",
     "plantuml.render": "PlantUMLServer",
-    "plantuml.server": "http://plantuml:8080/svg/",
+    "plantuml.server": "http://kroki:8000/plantuml/svg/",
     "plantuml.exportOutDir": ".",
     "plantuml.exportFormat": "svg",
     "plantuml.exportSubFolder": false,

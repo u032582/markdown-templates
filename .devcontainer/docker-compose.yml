@@ -8,5 +8,15 @@ services:
       - ..:/workspace/
   plantuml:
     image: plantuml/plantuml-server:latest
-    ports:
-      - 8080:8080
+  kroki:
+    image: yuzutech/kroki:latest
+    environment:
+      - KROKI_BLOCKDIAG_HOST=blockdiag
+      - KROKI_MERMAID_HOST=mermaid
+    depends_on:
+      - blockdiag
+      - mermaid
+  blockdiag:
+    image: yuzutech/kroki-blockdiag:latest
+  mermaid:
+    image: yuzutech/kroki-mermaid:latest

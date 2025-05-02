@@ -10,6 +10,9 @@
 		"jebbs.plantuml",
 		"csholmq.excel-to-markdown-table",
 		"analytic-signal.preview-pdf",
-		"oderwat.indent-rainbow"
+		"oderwat.indent-rainbow",
+		"ritwickdey.LiveServer",
+		"tomoyukim.vscode-mermaid-editor",
+		"jsynowiec.vscode-insertdatestring"
 	]
 }

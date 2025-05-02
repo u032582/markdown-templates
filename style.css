@@ -1,0 +1,43 @@
+h1 {
+    color: rgb(148, 38, 84) !important;
+}
+
+/* テーブルのスタイリング */
+.markdown-preview table {
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.markdown-preview table thead {
+    background-color: #f2f2f2;
+}
+
+.markdown-preview table th {
+    border: 1px solid #ddd;
+    padding: 4px 10px; 
+    font-weight: bold;
+    text-align: left;
+}
+
+.markdown-preview table td {
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    line-height: 1.2;
+}
+
+.markdown-preview table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.markdown-preview table tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 914px) {
+    html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

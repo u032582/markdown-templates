@@ -28,9 +28,11 @@ markmap:
   colorFreezeLevel: 2
   maxWidth: 300
 ---
-# Markdown Exmples
 
-@import "style.less"
+<!-- @import "style.css" -->
+
+# Markdown Exmple
+
 
 [TOC]
 
@@ -46,6 +48,7 @@ markmap:
 @import "assets/mindmap.png"
 
 ---
+
 
 ## PlantUML
 @import "assets/sequence.puml"
